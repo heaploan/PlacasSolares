@@ -29,4 +29,10 @@ public class Casa {
     public int getSurface(){
         return surface;
     }
+    public boolean isSwtch() {
+        return swtch;
+    }
+    public ArrayList<Placa> getPlacas() {
+        return placas;
+    }
 }

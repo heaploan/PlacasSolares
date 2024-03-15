@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34f46467-7802-4bc1-bc82-5979dd097544" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Casa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Options.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Placa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Casa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Placa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Placa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +52,17 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,6 +73,8 @@
       <updated>1710513643875</updated>
       <workItem from="1710513645036" duration="126000" />
       <workItem from="1710513795787" duration="14517000" />
+      <workItem from="1710531546043" duration="2560000" />
+      <workItem from="1710534293599" duration="4179000" />
     </task>
     <servers />
   </component>
