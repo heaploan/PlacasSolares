@@ -13,13 +13,13 @@ public class Panel {
     }
 
     // Getter
-    public int getSurface() {
+    public int getPanelSurface() {
         return surface;
     }
     public float getPrice() {
         return price;
     }
-    public int getPower() {
+    public int getPanelPower() {
         return power;
     }
 }

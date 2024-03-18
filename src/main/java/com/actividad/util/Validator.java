@@ -31,7 +31,7 @@ public class Validator {
     }
 
     public static boolean valPanelSurface(House house, int surface){
-        if(surface > house.getSurface()){
+        if(surface > house.getHouseSurface()){
             System.out.println("ERROR: La superficie de la casa es demasiado pequeña.");
             return false;
         }
@@ -46,14 +46,12 @@ public class Validator {
         return true;
     }
 
-    public static boolean valSwtch (House house) {
+    public static void valSwtch (House house) {
         if (house.isSwtch()) {
             System.out.println("ERROR: El interruptor ya está encendido");
-            return false;
         } else {
             house.setSwtch(true);
             System.out.println("Interruptor se ha encendido");
-            return true;
         }
     }
 }

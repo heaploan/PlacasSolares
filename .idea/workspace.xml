@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34f46467-7802-4bc1-bc82-5979dd097544" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/actividad/util/Option.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Placa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/model/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/model/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/util/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/util/Option.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/util/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/view/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actividad/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actividad/view/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

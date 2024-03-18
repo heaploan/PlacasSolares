@@ -20,7 +20,7 @@ public class House {
         devices = new ArrayList<>();
     }
     // Adding
-    public void addPlaca(Panel panel) {
+    public void addPanel(Panel panel) {
         panels.add(panel);
     }
     public void addDevice(Device device){
@@ -34,16 +34,16 @@ public class House {
     public String getName(){
         return name;
     }
-    public int getSurface(){
+    public int getHouseSurface(){
         return surface;
     }
     public boolean isSwtch() {
         return swtch;
     }
-    public ArrayList<Panel> getPlacas() {
+    public ArrayList<Panel> getPanels() {
         return panels;
     }
-    public ArrayList<Device> getAparells() {
+    public ArrayList<Device> getDevices() {
         return devices;
     }
 
@@ -51,4 +51,5 @@ public class House {
     public void setSwtch(boolean swtch) {
         this.swtch = swtch;
     }
+
 }

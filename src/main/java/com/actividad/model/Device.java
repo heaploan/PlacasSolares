@@ -17,7 +17,7 @@ public class Device {
         return description;
     }
 
-    public int getPower() {
+    public int getDevicePower() {
         return power;
     }
 

@@ -4,17 +4,17 @@ import com.actividad.model.Device;
 import com.actividad.model.House;
 import com.actividad.model.Panel;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 
 public class Option {
 
     private ArrayList<House> houses;
+
     public Option() {
         houses = new ArrayList<>();
     }
 
-    public void addCasa(String[] commands){
+    public void addCasa(String[] commands) {
         if (Validator.valComLength(commands, 4)) {
             String nif = commands[1];
             if (!Validator.houseExists(houses, nif)) {
@@ -42,8 +42,13 @@ public class Option {
                 for (House house : houses) {
                     if (Validator.houseExists(houses, nif)) {
                         if (Validator.valPanelSurface(house, surface)) {
-                            house.addPlaca(newPanel);
+                            int availableSurface = availableSurface(house);
+                            if (availableSurface >= surface){
+                            house.addPanel(newPanel);
                             System.out.println("Placa registrada correctamente.");
+                            } else {
+                                System.out.println("ERROR: No hay suficiente superficie");
+                            }
                         }
                         break;
                     }
@@ -54,7 +59,7 @@ public class Option {
         }
     }
 
-    public void addDevice(String[] commands){
+    public void addDevice(String[] commands) {
         if (Validator.valComLength(commands, 4)) {
             String nif = commands[1];
             if (Validator.houseExists(houses, nif)) {
@@ -75,8 +80,53 @@ public class Option {
             }
         }
     }
-    public void onHouse(String[] commands)  {
 
-
+    public void onHouse(String[] commands) {
+        if (Validator.valComLength(commands, 2)) {
+            String nif = commands[1];
+            if (Validator.houseExists(houses, nif)) {
+                for (House house : houses){
+                    if (house.getNif().equalsIgnoreCase(nif)){
+                        Validator.valSwtch(house);
+                        break;
+                    }
+                }
+            } else {
+                System.out.println("ERROR: No se encontró ninguna casa registrada con ese NIF");
+            }
+        }
     }
+
+    public void list(){
+        System.out.println("--- Paneles Solares, S.L. ---");
+        System.out.println("Casas registradas: " + houses.size());
+        for (int i = 0; i < houses.size(); i++){
+            House house = houses.get(i);
+            System.out.println("Casa " + (i+1));
+            System.out.println("Cliente: " + house.getNif() + " - " + house.getName());
+            System.out.println("Superficie del tejado: " + house.getHouseSurface());
+            System.out.println("Superficie disponible: " + availableSurface(house));
+            System.out.println("Interruptor general: " + (house.isSwtch() ? "Encendido" : "Apagado"));
+            if (!house.getDevices().isEmpty()){
+                System.out.println("Placas solares instaladas: " + house.getPanels().size());
+            } else{
+                System.out.println("No tiene placas solares instaladas.");
+            }
+            if (!house.getDevices().isEmpty()){
+                System.out.println("Aparatos registrados: " + house.getDevices().size());
+            } else{
+                System.out.println("No tiene aparatos eléctricos registrados.");
+            }
+            System.out.println();
+        }
+    }
+
+    public int availableSurface(House house) {
+        int occupiedSurface = 0;
+        for (Panel panel : house.getPanels()) {
+            occupiedSurface += panel.getPanelSurface();
+        }
+        return house.getHouseSurface() - occupiedSurface;
+    }
+
 }
