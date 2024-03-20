@@ -1,6 +1,6 @@
 package com.actividad.view;
 
-import com.actividad.util.Option;
+import com.actividad.view.util.Option;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -44,6 +44,7 @@ public class Menu {
                         break;
 
                     case "offaparell":
+                        op.offDevice(commandParts);
                         break;
 
                     case "list":
